@@ -15,6 +15,9 @@
   --primary-bg-color: #e5e5e5;
   --white-color: #ffffff;
   --modal-background-color: #fcfcfc;
+
+  /* Animation */
+  --transition-effect: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 body {
@@ -104,7 +107,7 @@ body {
 }
 .contacts-link {
   color: var(--main-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-effect);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -154,8 +157,8 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect),
+    color var(--transition-effect);
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -180,18 +183,18 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   padding: 12px 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect),
+    color var(--transition-effect), border var(--transition-effect),
+    box-shadow var(--transition-effect);
 }
 .filter-btn {
   background: var(--light-bg-color);
   border: 1px solid var(--accent-color);
   color: var(--pressed-state-color);
   padding: 12px 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect),
+    color var(--transition-effect), border var(--transition-effect),
+    box-shadow var(--transition-effect);
 }
 
 .btn-list {
@@ -374,7 +377,7 @@ body {
   left: 0;
   margin: 0;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-effect);
 }
 .project-link:hover .overlay-txt,
 .project-link:focus .overlay-txt {
@@ -392,7 +395,7 @@ body {
 .project-link {
   display: block;
   text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-effect);
 }
 .project-link:hover,
 .project-link:focus {
@@ -425,7 +428,7 @@ body {
   height: 40px;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -451,7 +454,7 @@ body {
   height: 88px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-effect), border var(--transition-effect);
 }
 .customers-list {
   display: flex;
@@ -460,7 +463,7 @@ body {
 }
 .customers-list-icon {
   fill: var(--subtle-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-effect);
 }
 .customers-list-icon:hover,
 .customers-list-icon:focus {
@@ -503,7 +506,7 @@ body {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect);
 }
 
 .footer-social-list-link:hover,
@@ -521,7 +524,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition-effect), visibility var(--transition-effect);
 }
 .modal {
   width: 408px;
@@ -549,8 +552,8 @@ body {
   position: absolute;
   top: 24px;
   right: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-effect),
+    fill var(--transition-effect);
 }
 .modal-close-btn:hover, .modal-close-btn:focus{
   background-color: var(--pressed-state-color);
