@@ -567,7 +567,7 @@ body {
   color: var(--white-color);
 }
 
-.modal-subscribe-btn {
+.subscribe-btn {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -588,8 +588,8 @@ body {
   cursor: pointer;
   transition: background-color var(--transition-effect), color var(--transition-effect);
 }
-.modal-subscribe-btn:hover,
-.modal-subscribe-btn:focus {
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: var(--pressed-state-color);
   color: var(--white-color);
 }
