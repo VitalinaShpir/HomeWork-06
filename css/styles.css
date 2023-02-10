@@ -134,7 +134,7 @@ body {
     url(../icons/hero-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -548,7 +548,7 @@ body {
   |============================
 */
 .footer-subscribe-container {
-  padding-left: 88px;
+  margin-left: auto;
 }
 .subscribe-container {
   display: flex;
@@ -611,8 +611,8 @@ body {
   transition: opacity var(--transition-effect), visibility var(--transition-effect);
 }
 .modal {
-  width: 408px;
-  height: 576px;
+  height: auto;
+  padding: 72px 24px 24px 24px;
   background-color: var(--modal-background-color);
   position: absolute;
   top: 50%;
@@ -656,7 +656,6 @@ body {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 72px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 14px;
@@ -674,7 +673,6 @@ body {
 .contact-form {
   width: 408px;
   height: auto;
-  padding: 0 24px 24px 24px;
   margin: auto;
   border-radius: 4px;
   background-color: var(--modal-background-color);
